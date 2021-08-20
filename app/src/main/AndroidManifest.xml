@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ahmadalfan.movieapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MovieApp"
+        android:allowBackup="true"
+        android:extractNativeLibs="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MovieApp"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        tools:targetApi="m">
+        <activity
+            android:name=".ui.tv.TvPopularActivity"
+            android:theme="@style/Theme.Blue">
+
+        </activity>
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:theme="@style/Theme.Lights">
+
+        </activity>
+        <activity
+            android:name=".ui.tv.TvAiringTodayActivity"
+            android:theme="@style/Theme.Blue" />
+        <activity
+            android:name=".ui.movie.PopularMovieActivity"
+            android:theme="@style/Theme.Blue" />
+        <activity
+            android:name=".ui.detail.DetailActivity"
+            android:theme="@style/Theme.Blue" />
+        <activity
+            android:name=".ui.movie.UpcomingActivity"
+            android:theme="@style/Theme.Blue" />
+        <activity
+            android:name=".ui.splashscreen.SplashscreenActivity"
+            android:theme="@style/Theme.Blue">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Movie App</string>
+    <string name="text_error">Terjadi kesalahan, silahkan coba kembali</string>
+    <string name="err_no_connection">Tidak ada koneksi internet, silahkan periksa koneksi internet anda</string>
+    <string name="err_empty_nodata">Data tidak tersedia</string>
+    <string name="txt_Lihat_semua">Lihat semua</string>
+    <string name="txt_movie_upcoming">Upcoming Movies</string>
+    <string name="txt_movie_popular">Popular Movies</string>
+    <string name="txt_Tv_today">Today TV shows</string>
+    <string name="txt_Tv_popular">Popular Tv Show</string>
+    <string name="txt_MovieApp">Movie App</string>
+
+</resources>
